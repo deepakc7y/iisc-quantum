@@ -8,7 +8,7 @@ Two-state systems are also used to encode information in quantum systems and it 
 
 A classical computer performs operations using classical bits i,e. either zero(0) or one (1). In contrast a Quantum Computer uses Quantum bits (also called as Qubits) which can be zero or one both at the same time, and this is what gives Quantum Computer its superior computing power. There are a number of physical objects that can be used as Qubits like a photon, a nucleus or even an electron. Each electron has an associated magnetic field and when you place such an electron in a magnetic field, the electron tends to align itself to the magnetic field as expected. This is called as the “Spin Down” state of the electron and it is the lowest energy state. We can put that electron in a “Spin Up” state but that requires a lot of energy and this state of the electron is the highest magnetic state and its direction is completely opposite to that of the magnetic field it is placed in.
 
-![alt text](http://url/to/img.png)
+![qubit](https://user-images.githubusercontent.com/48193113/103323465-fc025e80-4a68-11eb-8d72-b8afed0b11a4.jpg)
 
 ## Superposition
 
@@ -30,7 +30,7 @@ The representation is obtained as follows:
 
 In complex vector space i.e., 2D Space the 0 and 1 were orthogonal states. But when we represent them on the Bloch Sphere, they’re actually anti-polar states i.e., opposite to each other. The states in x, y, and z directions can be calculated using the above formula.
 
-![alt text](http://url/to/img.png)
+![bloch-sphere](https://user-images.githubusercontent.com/48193113/103323473-fd338b80-4a68-11eb-81d1-b9e3e37540ac.jpg)
 
 ## Measurement
 
@@ -38,7 +38,7 @@ In Quantum Mechanics, if we know the quantum state of a particle i.e., its wave 
 
 ![alt text](http://url/to/img.png) is the Schrödinger’s equation.
 
-![alt text](http://url/to/img.png)
+![measurement](https://user-images.githubusercontent.com/48193113/103323477-fdcc2200-4a68-11eb-92e2-1f80f0767807.jpg)
 
 Let us assume we have a qubit and now let’s say that this quantum state is passed through a measuring apparatus and the output we get is
 
