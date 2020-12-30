@@ -49,7 +49,7 @@ So, what exactly happens?
 
 We are entangling the qubit with the needle of the measuring apparatus and we enter into this superposition and somehow the nature does not appreciate superpositions at a macroscopic level and somewhere along the time with some abstraction the superposition collapses and we get the measurement as given above. 
 
-![alt text](http://url/to/img.png)
+![measurement2](https://user-images.githubusercontent.com/48193113/103323632-d0cc3f00-4a69-11eb-8283-fdc7a55efb00.jpg)
 
 ## Entanglement
 
