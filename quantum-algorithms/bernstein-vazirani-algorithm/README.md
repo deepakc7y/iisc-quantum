@@ -9,9 +9,9 @@ Let’s say my secret number is 1001. The classical computer would make its firs
 ## The Quantum Solution:
 Consider a hidden Boolean function f which takes in a string of n bits {𝑥0, 𝑥1, . . . . . . 𝑥𝑛−1} and returns 1 for only a unique n-bit string 𝑠 = {𝑠0, 𝑠1, . . . . . 𝑠𝑛−1 } and 0 otherwise. It computes 𝑠. 𝑥 modulo 2 (i.e., computing the bitwise AND between the two numbers s and x, and adding up the results, and finally returning the sum modulo 2). For example, let us assume our secret number to be as 100101. Since the number of bits = 6, we initialize 6 input qubitsto state |0⟩ and 1 output qubit to state |1⟩ whose function shall be mentioned later. We Hadamard the first six qubits (i.e., we put them in superposition). Whenever we Hadamard a gate with state 0, we get |+⟩ state which is defined as:
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/hadamard-plus.jpg" width="300">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/hadamard-plus.JPG" width="300">
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/hadamard-minus.jpg" width="300">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/hadamard-minus.JPG" width="300">
 
 The Quantum Algorithm performs CNOT operation on qubits with 1 from the secret number and target qubit for all these qubits is our output qubit q6. When our control bit is 1, the target bit will flip. This part of our algorithm is what constitutes as the black box (also called as the “oracle”). We will build it as a function that computes s.x modulo 2 by applying CX gates from the first n qubits onto the last qubit whenever there is a 1 in the secret number. We will do this in reverse order, meaning that there will be a CX gate from the nth qubit to the last qubit if the first bit of the secret number is 1. Eventually after applying this CNOT Gate, we changed the state of control bit from |+⟩ to |-⟩. The next step involves applying Hadamard to all six qubits to reverse their states from being in a superposition state to a fixed value such as |0⟩ or |1⟩. The last step of this Algorithm involves measuring the six qubits and storing them into classical bits. This measurement gives us our secret number. 
 
