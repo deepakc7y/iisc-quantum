@@ -100,6 +100,8 @@ Due to the prior entanglement shown in the EPR Pair:
 - By using so-called local operations and classical communication (LOCC) they can create fewer pairs with higher entanglement and higher degree of purity. Therefore, distillation is nothing but entanglement purification.
 - Quantum Entanglement distillation can in this way overcome the degenerative influence of noisy Quantum Channels by transforming previously shared less entangled pairs into a smaller number of maximally entangled pairs.
 
+<br>
+
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/photons-distillation.JPG" width="400">
 
 <!-- ### Resources -->
