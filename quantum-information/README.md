@@ -8,7 +8,9 @@ Two-state systems are also used to encode information in quantum systems and it 
 
 A classical computer performs operations using classical bits i,e. either zero(0) or one (1). In contrast a Quantum Computer uses Quantum bits (also called as Qubits) which can be zero or one both at the same time, and this is what gives Quantum Computer its superior computing power. There are a number of physical objects that can be used as Qubits like a photon, a nucleus or even an electron. Each electron has an associated magnetic field and when you place such an electron in a magnetic field, the electron tends to align itself to the magnetic field as expected. This is called as the “Spin Down” state of the electron and it is the lowest energy state. We can put that electron in a “Spin Up” state but that requires a lot of energy and this state of the electron is the highest magnetic state and its direction is completely opposite to that of the magnetic field it is placed in.
 
-<center><img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/qubit.jpg" width="400"></center>
+<br>
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/qubit.jpg" width="400">
 
 ## Superposition
 
