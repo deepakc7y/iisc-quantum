@@ -8,7 +8,7 @@ This one is purely a classical communication. So, suppose Alice wants to send se
 
 ## Communication on the Classical and Quantum Border 
 
-Here Alice uses the property of Polarization to encode the information. In figure, we can see that the polarization can be split into its horizontal and vertical components denoted as Ph and Pv respectively. Alice can choose to represent logical 1 using vertically polarized photons and logical 0 using horizontally polarized photons and the information can be sent to Bob using this ideology. The receiver on Bob’s side can decode the information into logical values by determining their polarization. The important point to note here is that the communication between Alice and Bob is still classical.
+Here Alice uses the property of Polarization to encode the information. In figure, we can see that the polarization can be split into its horizontal and vertical components denoted as P<sub>h</sub> and P<sub>v</sub> respectively. Alice can choose to represent logical 1 using vertically polarized photons and logical 0 using horizontally polarized photons and the information can be sent to Bob using this ideology. The receiver on Bob’s side can decode the information into logical values by determining their polarization. The important point to note here is that the communication between Alice and Bob is still classical.
 
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/quantum-communication1.jpg" width="300">
 <br>
