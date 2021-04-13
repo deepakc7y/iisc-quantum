@@ -10,7 +10,7 @@ A classical computer performs operations using classical bits i,e. either zero(0
 
 <!-- ![qubit](https://user-images.githubusercontent.com/48193113/103323465-fc025e80-4a68-11eb-8d72-b8afed0b11a4.jpg) -->
 
-<img src="images/qubit.jpg" width="100">
+<img src="./images/qubit.jpg" width="100">
 
 ## Superposition
 
