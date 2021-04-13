@@ -20,7 +20,7 @@ Alice knows that light can be polarized, not just horizontally (0°) or vertical
 
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/p45-communication.JPG" width="200">
 
-Now what happens is that if Alice sends many photons, all in P45 polarization then, Bob’s receiver (also called as measurement device) will answer logical 0 in half of the times and logical 1 in the remaining half, which is all done randomly. In classical sense, no information is sent to Bob. Thus, the photon prepared in P45 polarization carries the value of both 0 and 1. Hence, this is a fully quantum operation.
+Now what happens is that if Alice sends many photons, all in P<sub>45</sub> polarization then, Bob’s receiver (also called as measurement device) will answer logical 0 in half of the times and logical 1 in the remaining half, which is all done randomly. In classical sense, no information is sent to Bob. Thus, the photon prepared in P<sub>45</sub> polarization carries the value of both 0 and 1. Hence, this is a fully quantum operation.
 
 To make the above communication completely noise-free, we return to coin-based analogy where Eve stands between Alice and Bob, and plays the role of the bit-flip channel. Similar to the second step, Alice prepares her coin by facing it upward to show heads (0) or tails (1) and gives it to Eve.  Randomly and with probability 1/2, Eve either leaves the coin unchanged or turns it upside down (i.e., flips it), and then hands it to Bob. As before, because of Eve’s random flip operation, Bob cannot be sure which bit value was sent originally by Alice.
 
