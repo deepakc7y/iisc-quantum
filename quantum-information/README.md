@@ -85,6 +85,8 @@ Due to the prior entanglement shown in the EPR Pair:
 - The entanglement of formation of a mixed state is defined as the minimum average entanglement of an ensemble of pure states that represents the given mixed state.
 - For entanglement of formation, the number of EPR pairs required to create many copies of the state with high fidelity.
 
+
+
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/entanglement.JPG" width="400">
 
 ### Quantitative Theory of Entanglement
