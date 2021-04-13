@@ -24,7 +24,7 @@ Now what happens is that if Alice sends many photons, all in P45 polarization th
 
 To make the above communication completely noise-free, we return to coin-based analogy where Eve stands between Alice and Bob, and plays the role of the bit-flip channel. Similar to the second step, Alice prepares her coin by facing it upward to show heads (0) or tails (1) and gives it to Eve.  Randomly and with probability 1/2, Eve either leaves the coin unchanged or turns it upside down (i.e., flips it), and then hands it to Bob. As before, because of Eve’s random flip operation, Bob cannot be sure which bit value was sent originally by Alice.
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/fully-quantum-communication.jpg" width="400">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/fully-quantum-communication.jpg" width="500">
 
 However, in reality, we cannot establish a proper quantum communication setup for more than 300 kilometres. So, we need to use something called as quantum repeaters in order to extend this range of communication between Alice and Bob. This type of setup can be seen in Tokyo where to cover a large distance we introduce a repeater called as trusted repeater (say Charlie) Alice gives her Key to Charlie and so does Bob and what Charlie will do is he will sum up the keys and makes it a public key and that way Alice and Bob can decode each other’s key. We are assuming that Charlie is faithful and won't leak anything. [9]
 
