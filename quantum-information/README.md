@@ -51,6 +51,53 @@ We are entangling the qubit with the needle of the measuring apparatus and we en
 
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/measurement2.jpg" width="400">
 
-<!-- ## Entanglement -->
+## Entanglement
+
+Quantum entanglement occurs when a pair or group of particles interact, in a way such that the quantum state of each particle of the pair or group cannot be described independently of the state of the others, including when the particles are separated by a large distance. 
+
+Measurements of physical properties such as position, momentum spin, and polarization performed on entangled particles can, in some cases, be found to be perfectly correlated.
+
+### Entanglement Assisted Communication
+
+Entangled EPR State can be represented as:
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/entanglement-epr-eqn.JPG" width="300">
+
+- Particle 1 and 2 are in Bell states contained by Alice.
+- Particle 3 is a residual held by Bob.
+
+Teleportation splits information into:
+- Classical Bit
+- Quantum Bit
+
+Due to the prior entanglement shown in the EPR Pair:
+
+- The system avoids cloning i.e., the quantum bit cannot be copied.
+- Faster than light communication because replica cannot be created that fast.
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/entanglement-epr-eqn.JPG" width="300">
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/entanglement-epr-eqn2.JPG" width="300">
+
+### Entanglement of Formation
+
+- The entanglement of a pure state of a pair of quantum systems is defined as the entropy of either member of the pair.
+- The entanglement of formation of a mixed state is defined as the minimum average entanglement of an ensemble of pure states that represents the given mixed state.
+- For entanglement of formation, the number of EPR pairs required to create many copies of the state with high fidelity.
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/entanglement.JPG" width="400">
+
+### Quantitative Theory of Entanglement
+
+- Since entanglement appears to be responsible for the remarkable behaviour of information in quantum mechanics, a means of quantifying it would seem useful.
+- Preparation of an entangled state, on the other hand, requires that Alice and Bob either share some pre-existing entanglement or acquire such entanglement by transmission of quantum states between them.
+- There is a unique entanglement measure which has the properties one might hope for, namely, the entropy of entanglement.
+
+### Entanglement Distillation
+- Alice (A) and Bob (B) concentrate or distill the entanglement by acting locally on their parts of the states i.e., exchanging classical information
+- By using so-called local operations and classical communication (LOCC) they can create fewer pairs with higher entanglement and higher degree of purity. Therefore, distillation is nothing but entanglement purification.
+- Quantum Entanglement distillation can in this way overcome the degenerative influence of noisy Quantum Channels by transforming previously shared less entangled pairs into a smaller number of maximally entangled pairs.
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/photons-distillation.JPG" width="400">
 
 <!-- ### Resources -->
