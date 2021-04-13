@@ -26,11 +26,11 @@ The state of a qubit can be represented in terms of two parameters i.e., θ(thet
 
 The representation is obtained as follows:
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere-eqn.JPG" width="200">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere-eqn.JPG" width="300">
 
 In complex vector space i.e., 2D Space the 0 and 1 were orthogonal states. But when we represent them on the Bloch Sphere, they’re actually anti-polar states i.e., opposite to each other. The states in x, y, and z directions can be calculated using the above formula.
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere.jpg" width="400">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere.jpg" width="300">
 
 ## Measurement
 
@@ -49,7 +49,7 @@ So, what exactly happens?
 
 We are entangling the qubit with the needle of the measuring apparatus and we enter into this superposition and somehow the nature does not appreciate superpositions at a macroscopic level and somewhere along the time with some abstraction the superposition collapses and we get the measurement as given above. 
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/measurement2.jpg" width="300">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/measurement2.jpg" width="400">
 
 <!-- ## Entanglement -->
 
