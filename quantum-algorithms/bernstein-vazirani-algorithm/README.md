@@ -57,5 +57,4 @@ sim = Aer.get_backend('qasm_simulator')
 result = execute(qc, backend = sim, shots = 1).result()
 counts = result.get_counts()
 print(counts)
-
 ```
