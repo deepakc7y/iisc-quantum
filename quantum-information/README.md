@@ -18,29 +18,27 @@ Like waves in classical physics, Quantum States can be added together (superpose
 
 Mathematical Representation of Superposition can be given as:
 
-<br>
-
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/quantum-state.JPG" width="200">
 
 ### Bloch Sphere Representation
 
 The state of a qubit can be represented in terms of two parameters i.e., θ(theta) and Φ(phi) where the value of θ ranges between 0 and π, and the value of Φ ranges between 0 and 2π. 
 
-<!-- The representation is obtained as follows: -->
+The representation is obtained as follows:
 
-<!-- ![alt text](http://url/to/img.png) -->
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere-eqn.JPG" width="200">
 
 In complex vector space i.e., 2D Space the 0 and 1 were orthogonal states. But when we represent them on the Bloch Sphere, they’re actually anti-polar states i.e., opposite to each other. The states in x, y, and z directions can be calculated using the above formula.
 
-<!-- ![bloch-sphere](https://user-images.githubusercontent.com/48193113/103323473-fd338b80-4a68-11eb-81d1-b9e3e37540ac.jpg) -->
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bloch-sphere.jpg" width="400">
 
 ## Measurement
 
 In Quantum Mechanics, if we know the quantum state of a particle i.e., its wave function then we can use Schrödinger’s equation to calculate what that particle will do in the future. Usually, it spreads out over time as a wave function. The problem is that we never actually observe the wave function but when we measure it, we find the particle at a single point in space.
 
-<!-- ![alt text](http://url/to/img.png) is the Schrödinger’s equation. -->
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/schrodinger-eqn.JPG" width="200"> is the Schrödinger’s equation.
 
-<!-- ![measurement](https://user-images.githubusercontent.com/48193113/103323477-fdcc2200-4a68-11eb-92e2-1f80f0767807.jpg) -->
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/measurement.jpg" width="400">
 
 Let us assume we have a qubit and now let’s say that this quantum state is passed through a measuring apparatus and the output we get is
 
@@ -51,7 +49,7 @@ So, what exactly happens?
 
 We are entangling the qubit with the needle of the measuring apparatus and we enter into this superposition and somehow the nature does not appreciate superpositions at a macroscopic level and somewhere along the time with some abstraction the superposition collapses and we get the measurement as given above. 
 
-<!-- ![measurement2](https://user-images.githubusercontent.com/48193113/103323632-d0cc3f00-4a69-11eb-8283-fdc7a55efb00.jpg) -->
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/measurement2.jpg" width="300">
 
 <!-- ## Entanglement -->
 
