@@ -10,6 +10,8 @@ A classical computer performs operations using classical bits i,e. either zero(0
 
 <!-- ![qubit](https://user-images.githubusercontent.com/48193113/103323465-fc025e80-4a68-11eb-8d72-b8afed0b11a4.jpg) -->
 
+<img src="images/qubit.jpg" width="100">
+
 ## Superposition
 
 Like waves in classical physics, Quantum States can be added together (superposed) and the result will be another valid quantum state and conversely, we can also state that each quantum state can be represented as a sum of two or more distinct states. In Quantum Information theory, a qubit state is a quantum superposition of the basic states |0⟩ and |1⟩ where |0⟩ is the Dirac Notation for a quantum state that always gives the result 0 when converted to classical logic and likewise |1⟩ is the state that always converts to 1. While the classical bit can only exist as either 0 or 1, a qubit may be in superposition of both states. The probabilities of 0 and 1 may vary for each quantum state.
