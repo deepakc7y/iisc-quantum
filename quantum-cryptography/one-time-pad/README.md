@@ -8,12 +8,10 @@ The One Time Pad (OTP) [4] system of security was first described in 1882. This 
 2. Let the shared key of k binary bits be k= [ k<sub>1</sub>, k<sub>2</sub>, ……… k<sub>k</sub> ]. 
 
 The encrypted message E can be written as,
-e1 = m1 ⊕ k1
-e2 = m2 ⊕ k2
-.
-.
-.
-ek = mk ⊕ kk
+e<sub>1</sub> = m<sub>1</sub> ⊕ k<sub>1</sub>, 
+e<sub>2</sub> = m<sub>2</sub> ⊕ k<sub>2</sub>, 
+e<sub>k</sub> = m<sub>k</sub> ⊕ k<sub>k</sub>.
+
 E= [e<sub>1</sub>, e<sub>2</sub>,……… e<sub>k</sub>] is the encrypted message sent across the channel.
 
 ## Decryption Procedure:
@@ -21,14 +19,10 @@ E= [e<sub>1</sub>, e<sub>2</sub>,……… e<sub>k</sub>] is the encrypted messa
 1. Let the data received at the receiver be R= [r<sub>1</sub>, r<sub>2</sub>, ………… r<sub>k</sub> ].
 Let the shared key of k binary bits be k= [ k<sub>1</sub>, k<sub>2</sub>, ……… k<sub>k</sub> ].
 2. The received message can be decrypted as,
-m1 = r1 ⊕ k1
-m2 = r2 ⊕ k2
-.
-.
-.
-.
-.
-mk = rk ⊕ kk
+m<sub>1</sub> = r<sub>1</sub> ⊕ k<sub>1</sub>, 
+m<sub>2</sub> = r<sub>2</sub> ⊕ k<sub>2</sub>, 
+m<sub>k</sub> = r<sub>k</sub> ⊕ k<sub>k</sub>
+
 M = [m<sub>1</sub>, m<sub>2</sub>,………m<sub>k</sub>].
 
 For an Eavesdropper, the probability of guessing the encoded message bit is exactly ½ as the encoded message is independent of the message. This provides security for the classical OTP.
