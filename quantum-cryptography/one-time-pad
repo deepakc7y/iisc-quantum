@@ -1,3 +1,0 @@
-# Classic One Time Pad (OTP)
-
-The One Time Pad (OTP) [4] system of security was first described in 1882. This is said to be the most secure encryption technique known, provided, the secret key has already been shared securely between the two parties. Transmission of each message bit requires an independent and random key bit. Each key is used only once. Hence, the name one-time pad
