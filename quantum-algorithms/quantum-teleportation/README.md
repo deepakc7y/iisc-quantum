@@ -70,5 +70,5 @@ We get the following as the output when the above code is executed:
 ```
 {'100': 263, '101': 270, '110': 239, '111': 252}
 ```
-The numbers 100, 101, 110 and 111 denote the classical bits c2c1c0 with the left-most bit being c2. As
-we can see, the result is always c2 = 1 because we teleported |1⟩ to qubit 2.
+The numbers 100, 101, 110 and 111 denote the classical bits c<sub>2</sub>c<sub>1</sub>c<sub>0</sub> with the left-most bit being c<sub>2</sub>. As
+we can see, the result is always c<sub>2</sub> = 1 because we teleported |1⟩ to qubit 2.
