@@ -13,7 +13,13 @@ Consider a hidden Boolean function f which takes in a string of n bits {𝑥<sub
 
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/hadamard-minus.JPG" width="300">
 
-The Quantum Algorithm performs CNOT operation on qubits with 1 from the secret number and target qubit for all these qubits is our output qubit q6. When our control bit is 1, the target bit will flip. This part of our algorithm is what constitutes as the black box (also called as the “oracle”). We will build it as a function that computes s.x modulo 2 by applying CX gates from the first n qubits onto the last qubit whenever there is a 1 in the secret number. We will do this in reverse order, meaning that there will be a CX gate from the nth qubit to the last qubit if the first bit of the secret number is 1. Eventually after applying this CNOT Gate, we changed the state of control bit from |+⟩ to |-⟩. The next step involves applying Hadamard to all six qubits to reverse their states from being in a superposition state to a fixed value such as |0⟩ or |1⟩. The last step of this Algorithm involves measuring the six qubits and storing them into classical bits. This measurement gives us our secret number. 
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bernstein-vazirani1.JPG" width="500">
+
+The Quantum Algorithm performs CNOT operation on qubits with 1 from the secret number and target qubit for all these qubits is our output qubit q6. When our control bit is 1, the target bit will flip. This part of our algorithm is what constitutes as the black box (also called as the “oracle”). We will build it as a function that computes s.x modulo 2 by applying CX gates from the first n qubits onto the last qubit whenever there is a 1 in the secret number. We will do this in reverse order, meaning that there will be a CX gate from the nth qubit to the last qubit if the first bit of the secret number is 1. 
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bernstein-vazirani2.JPG" width="500">
+
+Eventually after applying this CNOT Gate, we changed the state of control bit from |+⟩ to |-⟩. The next step involves applying Hadamard to all six qubits to reverse their states from being in a superposition state to a fixed value such as |0⟩ or |1⟩. The last step of this Algorithm involves measuring the six qubits and storing them into classical bits. This measurement gives us our secret number. 
 
 The best part about this Algorithm is that it gives us our secret number in just one try, no matter how many numbers of bits the secret number has.
 
