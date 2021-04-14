@@ -99,44 +99,44 @@ Following the protocol, we selected n bits for (m-q) bits (q -> no. of bits drop
 import numpy as np
 import random as rd
 
-rt = np.sqrt(2) # root 2
+rt = np.sqrt(2)      #root 2
 
 z = np.array([[1],[0]]) #zero bit in standard basis
 o = np.array([[0],[1]]) #bit 1 in standard basis 
 p = np.array([[1/rt],[1/rt]]) #bit 0 in hadamard basis
 m = np.array([[1/rt],[-(1/rt)]]) #bit 1 in hadamard basis
 
-st_measure = np.array([[1,0],[0,1]]) # for measurement in standard basis
+st_measure = np.array([[1,0],[0,1]]) #for measurement in standard basis
 
 hd_measure = np.array([[(1/rt),(1/rt)],[(1/rt),(1/rt)]]) #measuremnet in hadamard basis
 
-data= [0,1,0,0,0,0,0,1] # ascii equivalent of "A"
+data= [0,1,0,0,0,0,0,1]            #ascii equivalent of "A"
 ```
 ### Transmission Scheme (Alice’s End):
 
 ```
 def bb84_alice_tx(number):
-alice_basis=[] #public list of basis
-alice_bits=[] #private list of actual bit value
-alice_qbits= [] #public qubits sent to bob
+alice_basis=[]                    #public list of basis
+alice_bits=[]                     #private list of actual bit value
+alice_qbits= []                   #public qubits sent to bob
 for i in range(number):
-if(rd.randint(0,1)): #1 ---> qubit in standard basis
+if(rd.randint(0,1)):              #1 ---> qubit in standard basis
 alice_basis.append('s')
-if(rd.randint(0,1)): # 1 ----> qubit |1> prepared
+if(rd.randint(0,1)):              #1 ----> qubit |1> prepared
 alice_bits.append(1)
 alice_qbits.append(o)
 
-else: #0 ----> |0> is prepared
+else:                             #0 ----> |0> is prepared
 alice_bits.append(0)
 alice_qbits.append(z)
 
-else: #0 ----> qubit in hadamard basis
+else:                             #0 ----> qubit in hadamard basis
 alice_basis.append('h')
-if(rd.randint(0,1)): #1 ---> qubit |+> prepared
+if(rd.randint(0,1)):              #1 ---> qubit |+> prepared
 alice_bits.append(1)
 alice_qbits.append(m)
 
-else: #0 ---> qubit |-> prepared
+else:                             #0 ---> qubit |-> prepared
 alice_bits.append(0)
 alice_qbits.append(p)
 
@@ -160,28 +160,28 @@ return comp.all()
 
 ```
 def bb84_bob_rx(input_qbit,number):
-bob_basis=[] # basis in which bob measures
-bob_bits=[] # actual bits
+bob_basis=[]                              #basis in which bob measures
+bob_bits=[]                               #actual bits
 temp =[]
 for i in range(number):
-if(rd.randint(0,1)): # 1 --> measurement in standard basis
+if(rd.randint(0,1)):                      #1 --> measurement in standard basis
 bob_basis.append('s')
 bob_qbit=np.dot(st_measure,input_qbit[i])
 #bob_qbit=np.transpose(bob_qbit)
 temp.append(bob_qbit)
-if (qbit_comp(bob_qbit,z)): # 0 was detected in standard basis 
+if (qbit_comp(bob_qbit,z)):                 #0 was detected in standard basis 
 bob_bits.append(0)
 else:
-bob_bits.append(1) # 1 was detected in standard basis
+bob_bits.append(1)                          #1 was detected in standard basis
 
 else:
 bob_basis.append('h')
 bob_qbit=np.dot(hd_measure,input_qbit[i])
 temp.append(bob_qbit)
-if (qbit_comp(bob_qbit,z)): # 0 was detected in hadamard basis
+if (qbit_comp(bob_qbit,z)):                 #0 was detected in hadamard basis
 bob_bits.append(0)
 else:
-bob_bits.append(1) # 1 was detected in hadamard basis
+bob_bits.append(1)                          #1 was detected in hadamard basis
 
 print("list of basis at bob ---> ",bob_basis)
 print("list of bits at bob ---> ",bob_bits)
@@ -195,34 +195,34 @@ b_bits,b_basis,test_q = bb84_bob_rx(Tx_qbit,20)
 ### Post Processing at Transmitter and Receiver’s ends:
 
 ```
-def post_processing_alice(a_basis,b_basis,al_bit): #post processing at alice
+def post_processing_alice(a_basis,b_basis,al_bit):    #post processing at alice
 a_final_key=[]
 for j in range(len(a_basis)):
 if(a_basis[j]==b_basis[j]):
 a_final_key.append(al_bit[j])
 else:
 pass
+return a_final_key                                    #the corrected bits at alice
 
-return a_final_key # the corrected bits at alice
-
-def post_processing_bob(a_basis,b_basis,b_bits): #post processing at bob
+def post_processing_bob(a_basis,b_basis,b_bits):      #post processing at bob
 b_final_key=[]
 for k in range(len(a_basis)):
 if(a_basis[k]==b_basis[k]):
 b_final_key.append(b_bits[k])
 else:
 pass
-return b_final_key     #the corrected bits at bob
+return b_final_key                                    #the corrected bits at bob
 ```
 
 ### One Time Pad:
 
 ```
-def OTP(msg,key): # OTP protocol for encryption of binary information
+#OTP protocol for encryption of binary information
+def OTP(msg,key):
 enc_dec=[]
 for i in range(len(msg)):
-enc_dec.append((msg[i]+key[i])%2) #modulo 2 addition or exor operation
-return enc_dec #msg, key and encrypted data of are same length
+enc_dec.append((msg[i]+key[i])%2)        #modulo 2 addition or exor operation
+return enc_dec                           #msg, key and encrypted data of are same length
 ```
 
 ### Output Results:
@@ -232,7 +232,6 @@ key_alice =post_processing_alice(a_basis,b_basis,al_bit)
 key_bob = post_processing_bob(a_basis,b_basis,b_bits) 
 
 enc_data = OTP(data,key_alice[0:8])
-
 dec_data =OTP(enc_data,key_bob[0:8])
 
 print('final key with alice ---> ',key_alice)
@@ -250,8 +249,8 @@ print("Data decrypted by Bob ---- > ", dec_data)
 
 ### Output of BB84:
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bb84-output.jpg" width="700">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bb84-output.jpg" width="800">
 
 ### Output of One Time Pad:
 
-<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bb84-output2.JPG" width="700">
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/bb84-output2.JPG" width="800">
