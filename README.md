@@ -1,5 +1,5 @@
 # Quantum Computing
-This repository consists of the work and study I did during my internship at the Indian Institute of Science (IISc) in Fall 2020 under the guidance of Dr. Anandi Giridharan. My teammates were Vrushali Chittaranjan, Rahul Bhat, and Reshma Bhat. I hope this repository serves as a guide for someone who is getting started in the field of Quantum Computing. If there are any errors (technical or non-technical), I highly encourage you to submit changes via pull request.
+This repository consists of the study I did during my internship at the Indian Institute of Science (IISc) in Fall 2020 under the guidance of Dr. Anandi Giridharan. My teammates were Vrushali Chittaranjan, Rahul Bhat, and Reshma Bhat. I hope this repository serves as a guide for someone who is getting started in the field of Quantum Computing. If there are any errors (technical or non-technical), I highly encourage you to submit changes via pull request.
 
 ## Introduction
 
