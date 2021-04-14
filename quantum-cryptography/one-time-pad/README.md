@@ -9,7 +9,7 @@ The One Time Pad (OTP) [4] system of security was first described in 1882. This 
 
 The encrypted message E can be written as,
 e<sub>1</sub> = m<sub>1</sub> ⊕ k<sub>1</sub>, 
-e<sub>2</sub> = m<sub>2</sub> ⊕ k<sub>2</sub>, 
+e<sub>2</sub> = m<sub>2</sub> ⊕ k<sub>2</sub>,......
 e<sub>k</sub> = m<sub>k</sub> ⊕ k<sub>k</sub>.
 
 E= [e<sub>1</sub>, e<sub>2</sub>,……… e<sub>k</sub>] is the encrypted message sent across the channel.
@@ -20,7 +20,7 @@ E= [e<sub>1</sub>, e<sub>2</sub>,……… e<sub>k</sub>] is the encrypted messa
 Let the shared key of k binary bits be k= [ k<sub>1</sub>, k<sub>2</sub>, ……… k<sub>k</sub> ].
 2. The received message can be decrypted as,
 m<sub>1</sub> = r<sub>1</sub> ⊕ k<sub>1</sub>, 
-m<sub>2</sub> = r<sub>2</sub> ⊕ k<sub>2</sub>, 
+m<sub>2</sub> = r<sub>2</sub> ⊕ k<sub>2</sub>,.....
 m<sub>k</sub> = r<sub>k</sub> ⊕ k<sub>k</sub>
 
 M = [m<sub>1</sub>, m<sub>2</sub>,………m<sub>k</sub>].
@@ -67,8 +67,7 @@ where, X|𝑚⟩ = |𝑚<sub>1</sub>⟩ and Z|𝑚⟩ = (-1)<sup>m</sup> |𝑚�
 ## Decryption Procedure:
 
 1. Let the received Qubit be |𝑒⟩, and the keys be |𝑘1⟩ and |𝑘2⟩.
-2. |𝑚⟩ = Z <sup>k2</sup> X <sup>k1</sup>
-   |𝑒⟩ = Z <sup>k2</sup> X <sup>k1</sup> (X <sup>k1</sup> Z <sup>k2</sup> |𝑚⟩) = |𝑚⟩
+2. |𝑚⟩ = Z <sup>k2</sup> X <sup>k1</sup>; |𝑒⟩ = Z <sup>k2</sup> X <sup>k1</sup> (X <sup>k1</sup> Z <sup>k2</sup> |𝑚⟩) = |𝑚⟩
 
 Hence, the message can be decrypted correctly.
 
