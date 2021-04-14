@@ -104,4 +104,8 @@ Due to the prior entanglement shown in the EPR Pair:
 
 <img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/photons-distillation.JPG" width="400">
 
+## Quantum Gates
+
+<img src="https://github.com/deepkchoudhary/iisc-quantum/blob/main/images/quantum-gates.jpg" width="700">
+
 <!-- ### Resources -->
