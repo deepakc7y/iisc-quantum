@@ -4,8 +4,8 @@ The One Time Pad (OTP) [4] system of security was first described in 1882. This 
 
 ## Encryption Procedure:
 
-1. Let the plain text of k binary bits which are to be transmitted be represented as, M = [m1, m2, m3…………mk].
-2. Let the shared key of k binary bits be k= [ k1, k2, k3 ……… kk ]. 
+1. Let the plain text of k binary bits which are to be transmitted be represented as, M = [m<sub>1</sub>, m<sub>2</sub>,…………m<sub>k</sub>].
+2. Let the shared key of k binary bits be k= [ k<sub>1</sub>, k<sub>2</sub>, ……… k<sub>k</sub> ]. 
 
 The encrypted message E can be written as,
 e1 = m1 ⊕ k1
@@ -14,12 +14,12 @@ e2 = m2 ⊕ k2
 .
 .
 ek = mk ⊕ kk
-E= [e1, e2, e3……… ek] is the encrypted message sent across the channel.
+E= [e<sub>1</sub>, e<sub>2</sub>,……… e<sub>k</sub>] is the encrypted message sent across the channel.
 
 ## Decryption Procedure:
 
-1. Let the data received at the receiver be R= [r1, r2, r3, ………… rk ].
-Let the shared key of k binary bits be k= [ k1, k2, k3 ……… kk ].
+1. Let the data received at the receiver be R= [r<sub>1</sub>, r<sub>2</sub>, ………… r<sub>k</sub> ].
+Let the shared key of k binary bits be k= [ k<sub>1</sub>, k<sub>2</sub>, ……… k<sub>k</sub> ].
 2. The received message can be decrypted as,
 m1 = r1 ⊕ k1
 m2 = r2 ⊕ k2
@@ -29,7 +29,7 @@ m2 = r2 ⊕ k2
 .
 .
 mk = rk ⊕ kk
-M = [m1, m2, m3…………mk].
+M = [m<sub>1</sub>, m<sub>2</sub>,………m<sub>k</sub>].
 
 For an Eavesdropper, the probability of guessing the encoded message bit is exactly ½ as the encoded message is independent of the message. This provides security for the classical OTP.
 
@@ -67,12 +67,14 @@ Quantum one-time pad [5], a single message bit is operated upon by two operators
 2. Then, the encrypted qubit |𝑒⟩ is given by,
 
 |𝑒⟩ = X <sup>k1 Z k2</sup> |𝑚⟩
- where, X|𝑚⟩ = |𝑚<sub>1</sub>⟩ and Z|𝑚⟩ = (-1)<sup>m</sup> |𝑚⟩
+
+where, X|𝑚⟩ = |𝑚<sub>1</sub>⟩ and Z|𝑚⟩ = (-1)<sup>m</sup> |𝑚⟩
 
 ## Decryption Procedure:
 
 1. Let the received Qubit be |𝑒⟩, and the keys be |𝑘1⟩ and |𝑘2⟩.
-2. |𝑚⟩ = Z <sup>k2</sup> X <sup>k1</sup>; |𝑒⟩ = Z <sup>k2</sup> X <sup>k1</sup> (X <sup>k1</sup> Z <sup>k2</sup> |𝑚⟩) = |𝑚⟩
+2. |𝑚⟩ = Z <sup>k2</sup> X <sup>k1</sup>
+   |𝑒⟩ = Z <sup>k2</sup> X <sup>k1</sup> (X <sup>k1</sup> Z <sup>k2</sup> |𝑚⟩) = |𝑚⟩
 
 Hence, the message can be decrypted correctly.
 
