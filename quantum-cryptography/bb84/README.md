@@ -1,6 +1,6 @@
 # BB84
 
-BB84[6] was the first quantum communication protocol, proposed by, Bennett and Brassard in 1984.
+BB84 [6] was the first quantum communication protocol, proposed by, Bennett and Brassard in 1984.
 
 This is provably secure and is used as a key distribution protocol for schemes like the one-time pad.
 
