@@ -5,6 +5,13 @@ This repository consists of the study I did during my internship at the Indian I
 
 Gordon Earl Moore in 1965 stated a law which is now very well known as the Moore’s Law and states that the “number of transistors in a dense Integrated Circuit (IC) doubles every two years.” The size of the transistors is essentially defined as the distance from source-to-drain. In 2020, the size has reached to as low as 5nm. With the size decreasing every year, we have to think about the Quantum Mechanics which tells us that even if there is a potential barrier between source and the drain, it is possible that electron can flow between them because of “Quantum Tunneling”. Therefore, it becomes a challenge to keep the potential barrier high enough while the barrier between the source and the drain is extremely thin. This is the engineering problem that needs to solved. Hence, we can see that now, the scientists have been working on building a computational machine that uses the laws of Quantum Mechanics to give us exponentially greater computing power. An important point to note here is that quantum computers do not make individual operations faster compared to the most advanced classical computer currently in existence. The main advantage that quantum computers offer is in terms of making the total number of operations significantly lesser compared to a classical computer. Thus, quantum computers are not to be thought of as replacement for classical computers but for certain tasks, they provide an exponential edge in terms of computing power.
 
+## Sections
+
+- [Quantum Information](https://github.com/deepakc7y/iisc-quantum/tree/main/quantum-information)
+- [Quantum Algorithms](https://github.com/deepakc7y/iisc-quantum/tree/main/quantum-algorithms)
+- [Quantum Communication](https://github.com/deepakc7y/iisc-quantum/tree/main/quantum-communication)
+- [Quantum Cryptography](https://github.com/deepakc7y/iisc-quantum/tree/main/quantum-cryptography)
+
 ## References
 
 1. Breaking RSA Encryption – an Update on the State-of-the-Art blog by Quintessence labs.
